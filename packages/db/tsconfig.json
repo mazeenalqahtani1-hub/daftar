@@ -1,0 +1,4 @@
+{
+  "extends": "@daftar/config/tsconfig.node.json",
+  "include": ["src"]
+}

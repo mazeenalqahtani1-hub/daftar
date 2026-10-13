@@ -1,0 +1,3 @@
+-- Development-only seed hook.
+-- Intentionally empty: the project never ships fake customers, invoices or balances.
+-- Any future seed must be clearly synthetic, run only locally, and NEVER in production.

@@ -1,0 +1,31 @@
+# dependencies & build
+node_modules/
+dist/
+build/
+.turbo/
+coverage/
+*.tsbuildinfo
+.vite/
+
+# environment & secrets — NEVER commit (only *.example files are tracked)
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.pem
+*.key
+.dev.vars
+
+# supabase local
+supabase/.branches/
+supabase/.temp/
+supabase/.env
+
+# editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.log
+playwright-report/
+test-results/

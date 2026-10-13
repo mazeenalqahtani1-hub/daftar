@@ -1,0 +1,8 @@
+{
+  "extends": "@daftar/config/tsconfig.react.json",
+  "compilerOptions": {
+    "types": ["vite/client", "vite-plugin-pwa/client", "node"],
+    "paths": { "@/*": ["./src/*"] }
+  },
+  "include": ["src", "vite.config.ts"]
+}

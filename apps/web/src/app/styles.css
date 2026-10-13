@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, "Segoe UI", Tahoma, "Noto Sans Arabic", sans-serif;
+  --color-brand: oklch(0.6 0.11 182);
+}
+
+html {
+  font-family: var(--font-sans);
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background-color: oklch(0.988 0.003 95);
+  color: oklch(0.29 0.012 95);
+  -webkit-tap-highlight-color: transparent;
+}

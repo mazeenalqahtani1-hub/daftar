@@ -1,0 +1,42 @@
+{
+  "name": "daftar",
+  "version": "0.0.0",
+  "private": true,
+  "description": "دفتر — دفتر ديون رقمي يربط المتاجر بالعملاء",
+  "type": "module",
+  "packageManager": "pnpm@12.8.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check:boundaries": "depcruise apps packages --config .dependency-cruiser.cjs",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm check:boundaries && pnpm check:secrets",
+    "db:start": "supabase start",
+    "db:stop": "supabase stop",
+    "db:status": "supabase status",
+    "db:reset": "supabase db reset"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "typescript-eslint": "^8.71.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.9",
+    "dependency-cruiser": "^18.5.0",
+    "turbo": "^2.11.6",
+    "supabase": "^2.119.0",
+    "typescript": "catalog:",
+    "@types/node": "catalog:"
+  }
+}

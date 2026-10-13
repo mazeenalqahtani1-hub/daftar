@@ -1,0 +1,17 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+# Pinned shared versions (single source of truth for the whole monorepo)
+catalog:
+  typescript: ~5.9.3
+  zod: ^4.6.5
+  vitest: ^5.0.3
+  "@types/node": ^22.20.1
+  tsx: ^4.23.15
+  tsup: ^8.5.1
+
+# Only these packages may run install scripts (supply-chain guard)
+allowBuilds:
+  esbuild: true
+  supabase: true

@@ -1,0 +1,28 @@
+{
+  "name": "@daftar/worker",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Background worker process (outbox, expirations, reconciliation). Skeleton only in Phase 0: no jobs registered.",
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=../../.env src/main.ts",
+    "build": "tsup",
+    "start": "node --env-file-if-exists=../../.env dist/main.js",
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@daftar/db": "workspace:*",
+    "@daftar/shared": "workspace:*",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@daftar/config": "workspace:*",
+    "@types/node": "catalog:",
+    "tsup": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

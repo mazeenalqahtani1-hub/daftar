@@ -1,0 +1,18 @@
+{
+  "name": "@daftar/config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared TypeScript configuration for the monorepo",
+  "files": [
+    "tsconfig.base.json",
+    "tsconfig.node.json",
+    "tsconfig.react.json"
+  ],
+  "scripts": {
+    "lint": "echo \"no sources to lint\"",
+    "typecheck": "echo \"no sources to typecheck\"",
+    "test": "echo \"no tests\"",
+    "build": "echo \"nothing to build\""
+  }
+}

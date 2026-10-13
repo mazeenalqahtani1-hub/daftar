@@ -1,0 +1,22 @@
+{
+  "name": "@daftar/db",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Database access layer (typed client for api.* functions, generated types). Empty until Phase 1.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run --passWithNoTests",
+    "build": "echo \"internal package: consumed from source\""
+  },
+  "devDependencies": {
+    "@daftar/config": "workspace:*",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

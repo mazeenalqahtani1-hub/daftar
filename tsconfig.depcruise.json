@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "target": "ES2023",
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "baseUrl": ".",
+    "paths": { "@/*": ["apps/web/src/*"] }
+  },
+  "include": ["apps", "packages"],
+  "exclude": ["**/node_modules", "**/dist"]
+}

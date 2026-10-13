@@ -1,0 +1,27 @@
+{
+  "name": "@daftar/shared",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Code shared by web, api and worker: env validation helpers, cross-cutting primitives",
+  "exports": {
+    ".": "./src/index.ts",
+    "./logger": "./src/logger.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "build": "echo \"internal package: consumed from source\""
+  },
+  "dependencies": {
+    "zod": "catalog:",
+    "pino": "^10.3.1"
+  },
+  "devDependencies": {
+    "@daftar/config": "workspace:*",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}
